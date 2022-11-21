@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <button onclick="abc()">click here</button> -->
+
+<form onsubmit="calc(); return false">
+
+    <label for="tm">Tm</label>
+ <input type="text" id="tm" placeholder="Enter your Total marks">
+<br>
+<label for="om">Om</label>
+<input type="text" id="om" placeholder="Enter your Obtain marks">
+<br>
+<button type="submit">Calculate </button>
+</form>
+<h1 id="res"></h1>
+<p id="res1"> welcome raza</p>
+
+<button>1</button>
+<button>2</button>
+<button>3</button>
+<br>
+<button>4</button>
+<button>5</button>
+<button>6</button>
+<br><button>7</button>
+<button>8</button>
+<button>9</button>
+<script>
+    // function abc() {
+    //     alert("hi ahamd")
+    // }
+
+
+    function calc() {
+        let tm1= document.querySelector("#tm").value;
+        let om1= document.querySelector("#om").value;
+          result=om1 * 100 /tm1;
+        //   document.write("you have got it" + result + "%")
+        document.querySelector("#res1").innerHTML= "you have got it" + result + "%" //es5
+          document.querySelector("#res").innerHTML=`you have got it ${result}`  //es6
+    }
+
+</script>
+
+    
+</body>
+</html>
